@@ -1,0 +1,33 @@
+a,input,button{
+    display: block;
+}
+
+img{
+    width: 100px;
+}
+
+table,tr,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+a{
+    display: block;
+}
+
+img{
+    width: 500px;
+}
+
+table, tr, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+header {
+    background-color: #0089b3;
+    display: flex;
+    height: 5.0rem;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+}
