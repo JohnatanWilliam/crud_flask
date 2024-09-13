@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+
+    {% set mensagens = get_flashed_messages() %} 
+    {% if mensagens %}
+ 
+        {% for msg in mensagens %}
+            {{ msg }}
+        {% endfor %}
+   
+     {% endif %}
+
+    <form action="/usuario/save" method="post">
+
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome">
+        <label for="endereco">Endereco:</label>
+        <input type="text" name="endereco" id="endereco">
+        <label for="idade">Telefone:</label>
+        <input type="text" name="idade" id="idade">
+        <button type="submit">Salvar</button>
+
+
+    </form>
+
+
+
+{% endblock %}
